@@ -4,14 +4,16 @@
    * Raleway: fonte para inputs e botões.
 */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
 
 /* Estiliza o corpo da página */
 body {
     font-family: "Dancing Script", cursive;
     /* Define a fonte padrão */
-    background-color: #DDDDDD;
+    background-color: #fff4eb;
     /* Cor de fundo da página */
     display: flex;
     /* Usa Flexbox para layout */
@@ -29,12 +31,6 @@ body {
     /* Remove o padding padrão */
 }
 
-/* Estiliza o título dentro do corpo da página */
-body h2 {
-    font-size: 2.5rem;
-    /* Tamanho da fonte do título */
-}
-
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem;
@@ -46,6 +42,14 @@ h1 {
     letter-spacing: 0.4rem;
     /* Espaçamento entre letras */
 }
+
+/* Estiliza o título dentro do corpo da página */
+body h2 {
+    font-size: 2.5rem;
+    /* Tamanho da fonte do título */
+    color: #422815;
+}
+
 
 /* Estiliza as seções da página */
 section {
@@ -69,8 +73,10 @@ section input {
     /* Espaçamento interno */
     border-radius: 1.5rem;
     /* Borda arredondada */
+    border-color: #BDC3C7;
     margin-bottom: 1rem;
     /* Espaçamento abaixo dos inputs */
+    background-color: #FFFFFF;
     color: #45474B;
     /* Cor do texto */
     font-family: "Raleway", sans-serif;
@@ -79,6 +85,13 @@ section input {
     /* Tamanho da fonte */
     box-sizing: border-box;
     /* Inclui padding e border na largura total */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+}
+
+section input::placeholder{
+    color: #7F8C8D;
+    opacity: 1;
 }
 
 /* Estiliza os botões dentro das seções */
@@ -89,9 +102,9 @@ section button {
     /* Remove a borda padrão */
     border-radius: 1.5rem;
     /* Borda arredondada */
-    background-color: #30475E;
+    background-color: #d16210;
     /* Cor de fundo do botão */
-    color: #F5F7F8;
+    color: #FFFFFF;
     /* Cor do texto do botão */
     font-family: "Raleway", sans-serif;
     /* Define a fonte do botão */
@@ -103,7 +116,7 @@ section button {
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color: #30475E;
+    background-color: #8a420e;
     /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Adiciona uma sombra mais intensa */
@@ -112,6 +125,7 @@ section button:hover {
 /* Estiliza os parágrafos dentro das section */
 section p {
     font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -146,9 +160,11 @@ section p {
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem;
+    font-family: "Playfair", serif;
+    /* Define a fonte do título do livro */
+    font-size: 1.7rem;
     /* Tamanho da fonte */
-    color: #222831;
+    color: #d16210;
     /* Cor do texto */
 }
 
@@ -166,7 +182,7 @@ section p {
 .item-resultado a:hover {
     text-decoration: underline;
     /* Adiciona sublinhado ao passar o mouse */
-    color: #2574be;
+    color: #3498DB;
     /* Cor do texto dos links ao passar o mouse*/
 }
 
@@ -183,6 +199,7 @@ a {
     /* Define o tamanho da fonte */
     font-weight: 500;
     /* Define o peso da fonte*/
+    color: #422815;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
@@ -213,6 +230,12 @@ footer {
     /* Define a fonte fo footer */
     font-size: 1rem;
     /* Tamanho da fonte */
+}
+
+footer a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    color: #45474B;
 }
 
 @media (max-width: 768px) {
