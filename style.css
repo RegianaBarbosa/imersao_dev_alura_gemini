@@ -1,9 +1,15 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
+/* Importa as fontes do Google Fonts.
+   * Chakra Petch: fonte principal para o corpo do texto.
+   * Dancing Script: fonte para títulos e elementos visuais.
+   * Raleway: fonte para inputs e botões.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "Dancing Script", cursive;
     /* Define a fonte padrão */
     background-color: #DDDDDD;
     /* Cor de fundo da página */
@@ -21,6 +27,12 @@ body {
     /* Remove a margem padrão */
     padding: 0;
     /* Remove o padding padrão */
+}
+
+/* Estiliza o título dentro do corpo da página */
+body h2 {
+    font-size: 2.5rem;
+    /* Tamanho da fonte do título */
 }
 
 /* Estiliza os títulos h1 */
@@ -61,6 +73,8 @@ section input {
     /* Espaçamento abaixo dos inputs */
     color: #45474B;
     /* Cor do texto */
+    font-family: "Raleway", sans-serif;
+    /* Define a fonte do input */
     font-size: 1rem;
     /* Tamanho da fonte */
     box-sizing: border-box;
@@ -79,6 +93,8 @@ section button {
     /* Cor de fundo do botão */
     color: #F5F7F8;
     /* Cor do texto do botão */
+    font-family: "Raleway", sans-serif;
+    /* Define a fonte do botão */
     font-size: 1rem;
     /* Tamanho da fonte */
     cursor: pointer;
@@ -91,6 +107,11 @@ section button:hover {
     /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza os parágrafos dentro das section */
+section p {
+    font-family: "Raleway", sans-serif;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -135,14 +156,33 @@ section button:hover {
 .item-resultado a {
     text-decoration: none;
     /* Remove o sublinhado padrão dos links */
-    color: #30475E;
+    color: #7e96ad;
     /* Cor do texto dos links */
+    font-size: 0.8rem;
+    /* Define o tamanho da fonte */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline;
     /* Adiciona sublinhado ao passar o mouse */
+    color: #2574be;
+    /* Cor do texto dos links ao passar o mouse*/
+}
+
+/* Estiliza os parágrafos e links dentro dos itens de resultado */
+.item-resultado p,
+a {
+    font-family: "Raleway", sans-serif;
+    /* Define a fonte do parágrafo e do link */
+}
+
+/* Estiliza os parágrafos do autor dentro dos itens de resultado */
+.autor {
+    font-size: 0.9rem;
+    /* Define o tamanho da fonte */
+    font-weight: 500;
+    /* Define o peso da fonte*/
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
@@ -169,6 +209,8 @@ footer {
     /* Posiciona o rodapé */
     bottom: 0;
     /* Alinha ao fundo da página */
+    font-family: "Raleway", sans-serif;
+    /* Define a fonte fo footer */
     font-size: 1rem;
     /* Tamanho da fonte */
 }
