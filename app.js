@@ -23,22 +23,24 @@ function pesquisar() {
     for (let dado of dados) {
         titulo = dado.title.toLowerCase();
         autor = dado.author.toLowerCase();
-        //se titulo includes campoPesquisa
-        if (dado.title.includes(campoPesquisa) || dado.author.includes(campoPesquisa)) {
-            //se campoPesquisa não for uma string sem nada
 
+        //se titulo includes campoPesquisa
+        if (titulo.includes(campoPesquisa) || autor.includes(campoPesquisa)) {
             //cria um novo elemento com as informações do dado.
             resultados += `
             <div class="item-resultado">
-            <h2>${dado.title}</h2> <p>${dado.description}</p> <p class="autor">${dado.author}, ${dado.year}</p> <a href="${dado.linkInfo}" target="_blank">Mais informações</a> </div>
+                <h2>${dado.title}</h2> <p>${dado.description}</p> 
+                <p class="autor">${dado.author}, ${dado.year}</p> 
+                <a href="${dado.linkInfo}" target="_blank">Mais informações</a> 
+            </div>
             `;
         }
 
     }
 
-    if(!resultados){
-        resultados = "<p>Nenhum resultado encontrado!</p>";
+    if (!resultados) {
+        resultados = "<p>Nenhum resultado encontrado!</p>"
     }
-
+    //Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados;
 }
