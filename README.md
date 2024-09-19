@@ -1,5 +1,6 @@
 # Clássicos da Literatura Brasileira
 Este projeto, desenvolvido durante a Imersão Dev com Google Gemini da Alura, tem como objetivo criar uma base de conhecimento sobre os clássicos da literatura brasileira.
+
 <img src="print-screen-site.png" alt="print screen do site" width="100%">
 
 **Acesse [aqui](https://classicos-da-literatura-brasileira.vercel.app/)** 
