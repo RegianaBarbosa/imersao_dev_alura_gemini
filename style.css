@@ -11,10 +11,8 @@
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Dancing Script", cursive;
+    font-family: "Monstserrat", serif;
     /* Define a fonte padrão */
-    background-color: #fff4eb;
-    /* Cor de fundo da página */
     display: flex;
     /* Usa Flexbox para layout */
     flex-direction: column;
@@ -29,18 +27,43 @@ body {
     /* Remove a margem padrão */
     padding: 0;
     /* Remove o padding padrão */
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
+
+/* Estiliza o header */
+header {
+    position: relative;
+    /* Torna o header um contêiner para a imagem */
+    overflow: hidden;
+    /* Esconde o conteúdo que extrapolar o header */
+    height: 200px;
+    /* Define a altura do header */
+}
+
+
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
     text-align: center;
     /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
     /* Espaçamento entre letras */
+    position: relative;
+    z-index: 1;
+    /* Garante que o título fique sobre a imagem */
+    color: #fff;
+    /* Define a cor do texto para melhor contraste */
+    text-align: center;
+    /* Centraliza o texto */
+
 }
 
 /* Estiliza o título dentro do corpo da página */
@@ -48,6 +71,7 @@ body h2 {
     font-size: 2.5rem;
     /* Tamanho da fonte do título */
     color: #422815;
+    margin-top: 0;
 }
 
 
@@ -89,7 +113,7 @@ section input {
     /* Sombra leve */
 }
 
-section input::placeholder{
+section input::placeholder {
     color: #7F8C8D;
     opacity: 1;
 }
@@ -199,6 +223,7 @@ a {
     /* Define o tamanho da fonte */
     font-weight: 500;
     /* Define o peso da fonte*/
+    font-style: italic;
     color: #422815;
 }
 
